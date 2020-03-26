@@ -29,24 +29,24 @@ TO TEST:
 	- 7.097355, 125.599271
 * Use SWAGGER UI as mentioned above section 8. just click on each project node and specify params as needed then click button TRY IT OUT.
 * You may also use POSTMAN or any familiar webservice testing tool with the below details:
-i. OrderList endpoint
-	>> uri and params: http://localhost:8080/orders?page=1&limit=2'
-	>> method : GET
+- OrderList endpoint
+	- uri and params: http://localhost:8080/orders?page=1&limit=2'
+	- method : GET
 	
-ii. PlaceOrder endpoint
-	>> uri: http://localhost:8080/orders
-	>> params (json array [string]) : {
+- PlaceOrder endpoint
+	- uri: http://localhost:8080/orders
+	- params (json array [string]) : {
 					  "destination": [
 					   7.090817, 125.606352
 					  ],
 					  "origin": [
 						7.089987, 125.605633
 					  ] }
-	>> method: POST
+	- method: POST
 	
-ii. TakeOrder endpoint
-	>> uri: http://localhost:8080/orders
-	>> params:
-		>>>   int: order#
-		>>> json : { "status": "TAKEN" }
-	>> method: PATCH
+- TakeOrder endpoint
+	- uri: http://localhost:8080/orders
+	- params:
+		-   int: order#
+		- json : { "status": "TAKEN" }
+	- method: PATCH
