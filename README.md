@@ -3,12 +3,12 @@ SpringBoot + Hibernate + MYSQL (simple RESTful endpoint that uses GOOGLE Map API
 
 *Prerequisite to run this app
 - A. *running MYSQL database
-- B. *db user: root/123456 (can use any other user existing user just update at the application.properties file
+- B. *db user: root/123456 (can use any other existing user just update at the application.properties file)
 - C. *database schema name 'order' ; attached start.sh in root project folder will be use to create schema and user if error kindly create manually [ schema: order , user: root/123456 ]
 - D. *ensure and update the below required values in property file located in '\src\main\resources\application.properties'
     - spring.datasource.username=root 
     - spring.datasource.password=123456
-    - google.api.key=<*REQUIRED VALID USE GOOGLE KEY>
+    - google.api.key=<*REQUIRED VALID GOOGLE API KEY>
 - E. *DO NOT FORGET THE VALUE FOR VALID GOOGLE API KEY as mentioned above
 - F. IDE with bundled maven plugin recommended Eclipse for Java EE developer
 
